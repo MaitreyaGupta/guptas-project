@@ -1,0 +1,21 @@
+#this is a work on progress to Simulate Valorant Like gameplay in Roblox . Please Tell me what i can do better and tell me how to make this work
+local Player=game.Players.LocalPlayer
+local Character=Player.Character or Player.ChaarcterAdded:Wait()
+local Humanoid=Character:WaitForChild("Humanoid") 
+local HumanoidRootPart=Humanoid:WaitForChild("HumanoidRootPart") 
+local debounce=false 
+local wpressed=true 
+local spressed=true 
+local ReplicatedSTorage=game:GetService("ReplicatedStorage")
+local Cam=game.Workspace.CurrentCamera 
+local SageButton=game.Workspace.SageButton
+Sagebutton.Activated:Connect(function()
+game.ReplicatedStorage.CharacterChange:FireServer(Sage)
+local Bodyvelocity=Instance.new('Bodyvelocity",HumanoidRootPart) 
+HumanoidRootPart.BodyVelocity=HumaoidRootPart.bodyVelocity+10 
+game.Character.CFrame=Sage.CFrame 
+RavenButton.Activated:Connect(function() 
+game.ReplicatedStorage.ChangeChaarcter:FireServer(Raven") 
+local BodyVelocity=Instance.new("BodyVelocity",HumanoidRootPart) 
+HumanoidRootPart.BodVelocity=BodyVelocity+12
+game.Character.Cframe=Raven.cFrame
